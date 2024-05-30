@@ -153,36 +153,12 @@ body {
   line-height: 1;
   transition: opacity .2s;
   display: flex;
-  box-shadow: 0 0 30px rgba(113, 137, 255, .7);
   white-space: nowrap;
   text-decoration: none;
 }
 
 .btn:hover {
   opacity: 0.8;
-}
-
-.shine {
-  filter: blur(3px);
-  background-image: linear-gradient(to right, rgba(183, 208, 255, 0), #fff 50%, rgba(183, 203, 255, 0));
-  width: 100px;
-  height: 2px;
-  position: absolute;
-  top: 0%;
-  bottom: auto;
-  left: auto;
-  right: 20px;
-}
-
-.shine._6 {
-  filter: blur(6px);
-  background-image: linear-gradient(to right, rgba(183, 208, 255, 0), #fff 50%, rgba(183, 203, 255, 0));
-  display: none;
-}
-
-.shine._9 {
-  filter: blur(9px);
-  background-image: linear-gradient(to right, #b7c3ff, #fff 50%, #b7c3ff);
 }
 
 .loved-para {
@@ -266,7 +242,6 @@ body {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
-
 /* Footer */
 .footer {
   justify-content: space-between;
@@ -316,6 +291,7 @@ h1 {
   font-size: 66px;
   font-weight: 500;
   line-height: 1.25676;
+  text-align: center;
 }
 
 h2 {
@@ -419,4 +395,81 @@ p {
   font-weight: 400;
   line-height: 1.54167;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .nav-section {
+    padding: 16px 24px;
+  }
+
+  .logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+
+  .brand-logo {
+    max-width: 165px;
+  }
+
+  .hero-section {
+    padding: 32px 24px;
+  }
+
+  .hero-img-wrapper {
+    margin: 32px auto 32px;
+    height: 700px;
+    width: 100%;
+    background-image: url('/assets/mobile-mockup.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  }
+
+  .hero-paragraph {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 20px 24px;
+    font-size: 14px;
+  }
+
+  .features-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 24px;
+    text-align: center;
+    grid-gap: 16px;
+  }
+
+  .stats-section {
+    padding: 32px 0 60px;
+  }
+
+  .stat-item {
+    width: 100%;
+    flex: 1;
+  }
+
+  .footer {
+    padding: 20px 24px 60px;
+  }
+
+  .footer-links {
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 45px;
+    text-align: center;
+  }
 }
