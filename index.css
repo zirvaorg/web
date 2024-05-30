@@ -211,20 +211,19 @@ body {
 
 .feature-item {
   background-color: var(--brand-700);
-  border: 1px solid rgba(61, 98, 151, 0.2);
+  border: 1px solid rgba(61, 98, 151);
   border-radius: 16px;
   padding: 16px;
   display: block;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   cursor: pointer;
 }
 
 .feature-item:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 /* stats */
@@ -403,11 +402,11 @@ p {
   }
 
   .logo-list {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
     padding: 0;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
   }
 
   .brand-logo {
