@@ -444,6 +444,7 @@ p {
 
   .features-wrapper {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 0 24px;
     text-align: center;
